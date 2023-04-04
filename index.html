@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    
+    <script
+      src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+      type="application/javascript"
+    ></script>
+    
+		<script src="script.js"></script>
+  </head>
+
+<body>
+  <div>
+    <h1>Камень / ножницы / бумага</h1>
+    <p>Вы должны сделать выбор за игрока 1 и игрока 2</p>
+    <p>Кнопка RESET сброс значений</p>
+		<br />
+    <label for="_playerOneChoice"> Введите ставку игрока 1 (1-3):</label>
+    <input type="number" id="_playerOneChoice" />
+    <label for="_playerTwoChoice"> Введите ставку игрока 2 (1-3):</label>
+    <input type="number" id="_playerTwoChoice" />
+    <button onclick="play()">Play</button>
+    <button onclick="reset()">Reset</button>
+    <button onclick="getGameInfo()">GameInfo</button>
+    <p>Результат игры: <span id="resultGame"> </span></p>
+  </div>
+</body>
+</html>
